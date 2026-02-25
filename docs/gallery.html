@@ -1,45 +1,65 @@
 <!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml">
-    <!-- Try opening this file on your local computer in a web browser (Firefox, Chrome, etc). 
-     * On Windows, go to the browser and type control + o and browse to find this file to open it.
-     * On Mac, go to the browser and type command + o and browse to find this file to open it. 
-     Look for the text in the <title> element in the tab above the browser search bar. Do you see it? 
-    -->
+<html>
     <head>
-        <!-- What's in the <head> element is a "meta" area not for display. 
-            It holds important information about the website's contents.
-            The text inside the <title> element does show in the top tab of a web browser. 
-             The <head> is where we will include info about styling the site, too. -->
-        <title>Starter HTML</title>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <!-- Here is a place where we can add a little styling code called CSS to this page. 
-            I used it to apply a background color to the body element.
-        -->
-        <link rel="stylesheet" type="text/css" href="style.css" />
+        <meta charset="UTF-8">
+            <title>Gallery | Trinity Taylor</title>
+            <link rel="stylesheet" type="text/css" href="style.css" />
     </head>
+    
     <body>
-        <!-- CONTENT FOR DISPLAY. The <body> element holds the content we see in the display window on the web browser.-->
-        <h1>Gallery</h1>
-        <nav class="featureBlock">
-            <a href="index.html">Home</a> | <a href="about.html">About</a> | <a href="gallery.html">Gallery</a>
-            
+        
+        <nav>
+            <ul class="nav">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="gallery.html">Work</a></li>
+            </ul>
         </nav>
-        <p>This is my Gallery page.</p>
         
+        <h1>Gallery</h1>
         
-        <div class="side-by-side">
-            <p>Go back to my <a href="index.html">main page</a>.</p>
+        <section class="intro">
+            <p>
+                A collection of my original art pieces.
+            </p>
+        </section>
+        
+        <section class="gallery">
             <figure>
-                <img src="images/llama_mp.jpg" />
-                <figcaption>Here is a llama I encountered on an amazing hiking trip in Macchu
-                    Picchu, on the Inca Trail.</figcaption>
+                <img src="images/zombieme.jpg" alt="Original artwork titled zombieme" />
+                <figcaption>self portrait</figcaption>
             </figure>
-           
-        </div>
-        <footer class="featureBlock">
-            <p>Shout out to the w3c community, and the developers of markup languages, and the oXygen XML editor!</p>
-            <p>We are . . . Digit at Penn State Behrend!</p>
-        </footer>
+            
+            <figure>
+                <img src="images/drzombie.jpg" alt="Original artwork titled drzombie" />
+                <figcaption>zombie dentist</figcaption>
+            </figure>
+            
+            <figure>
+                <img src="images/conetent.jpg" alt="Original artwork titled conetent" />
+                <figcaption>the contents of my purse</figcaption>
+            </figure>
+            
+            <figure>
+                <img src="images/schoollunch.jpg" alt="Original artwork titled schoollunch" />
+                <figcaption>school breakfast</figcaption>
+            </figure>
+            
+            <figure>
+                <img src="images/pear.jpg" alt="Original artwork titled pear" />
+                <figcaption>pear</figcaption>
+            </figure>
+            
+            <figure>
+                <img src="images/apples.jpg" alt="Original artwork titled apples" />
+                <figcaption>apples</figcaption>
+            </figure>
+            
+            <figure>
+                <img src="images/family.jpg" alt="Original artwork titled family" />
+                <figcaption>family portrait</figcaption>
+            </figure>
+        </section>
+        
     </body>
 </html>
