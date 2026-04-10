@@ -75,6 +75,7 @@ body.home-page {
   inset: 0;
 }
 
+
 .btn {
   position: absolute;
   width: 100%;
@@ -101,16 +102,19 @@ body.home-page {
 }
 
 .gallery {
-  top: 49%;
+  top: 47%;
   left: 77.4%;
 }
 
 .essays {
   top: 75.7%;
   left: 77%;
+ 
+  
 }
 .btn {
   position: absolute;
+  
   width: 20%;
   height: 9%;
   display: flex;
@@ -121,5 +125,27 @@ body.home-page {
   font-size: clamp(1.4rem, 2.6vw, 2.7rem);
   color: #8a7348;
   line-height: 1;
-  background: rgba(255, 0, 0, 0.18);
+/*  background: rgba(255, 0, 0, 0.18);*/
+
+}
+.about-blurb {
+  position: absolute;
+  top: 40.2%;
+  left: 3.2%;
+  width: 21%;
+
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  text-decoration: none; 
+
+  font-family: "Times New Roman", serif;
+  font-size: 10pt;
+  /*line-height: 1.35;
+  text-align: center;
+*/
+  color: #8a7348;
+  text-shadow: 0.5px 0.5px 2px rgba(0, 0, 0, 0.12);
 }
