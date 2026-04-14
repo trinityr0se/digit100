@@ -1,10 +1,15 @@
 <!DOCTYPE html>
-<html>
-    
+<html lang="en">
+
     <head>
-        <title>essays</title>
+        <meta charset="UTF-8">
+        <title>Essays</title>
+        <link rel="stylesheet" href="style.css">
     </head>
-    <body>
+
+
+    <body class="essay-page">
+
         <nav>
             <ul class="nav">
                 <li>
@@ -24,7 +29,7 @@
                 </li>
             </ul>
         </nav>
-        
+
         <h1>Comparative Website Development Reflection</h1>
 
         <p> For this project in DIGIT 100, I developed two websites side by side. One I constructed
@@ -62,47 +67,66 @@
                 target="_blank"> https://sites.psu.edu/trtaylorportfolio/ </a>
         </p>
 
+        <hr>
+
+        <h1>Corpus Analysis: Adventure Time vs. Regular Show</h1>
+
+        <p> For this corpus analysis, I compared transcripts from <em>Adventure Time</em> Season 1
+            and <em>Regular Show</em> Season 1 using Voyant Tools and AntConc. Both shows are
+            chaotic and funny in really different ways, so I wanted to see if those differences
+            showed up in the language they use. By analyzing word frequency, word clouds, and
+            repeated phrases, I was able to identify clear differences in tone and vocabulary
+            between the two. </p>
+
         <h2>Voyant Analysis</h2>
 
-        <div style="display:flex; gap:30px; flex-wrap:wrap;">
-
+        <div class="essay-images">
             <figure>
-                <img src="images/AT-voyant.png" alt="Adventure Time Voyant" width="400">
-                <figcaption>Voyant word cloud for Adventure Time.</figcaption>
+                <img src="images/AT-voyant.png" alt="Adventure Time Voyant" class="zoom-img ">
+                <figcaption> Voyant word cloud for Adventure Time, showing more unique and
+                    fantasy-based vocabulary. </figcaption>
             </figure>
 
             <figure>
-                <img src="images/RS-voyant.png" alt="Regular Show Voyant" width="400">
-                <figcaption>Voyant word cloud for Regular Show.</figcaption>
+                <img src="images/RS-voyant.png" alt="Regular Show Voyant" class="zoom-img ">
+                <figcaption> Voyant word cloud for Regular Show, showing simpler and more
+                    conversational language. </figcaption>
             </figure>
-
         </div>
+
+        <p> Looking at the Voyant word clouds, both shows repeat character names and common dialogue
+            words, but the overall vocabulary still feels different. <em>Adventure Time</em> uses
+            more imaginative and world-specific language, while <em>Regular Show</em> relies more on
+            everyday speech. Even from this overview, you can already see that <em>Adventure
+                Time</em> leans more into creativity and fantasy, while <em>Regular Show</em> feels
+            more grounded. </p>
+
         <h2>AntConc N-Gram Analysis</h2>
 
-        <p> When I looked at the n-gram results in AntConc, I noticed that both shows repeat
-            character names a lot, like “Finn and Jake” and “Mordecai and Rigby,” which makes sense
-            since they’re both really dialogue-heavy. But the way those phrases work is actually
-            pretty different. In <em>Adventure Time</em>, a lot of the repeated phrases are more
-            specific and tied to the fantasy world, like “Lumpy Space Princess” or “the candy
-            people,” which feel very unique to that universe. In <em>Regular Show</em>, the phrases
-            are a lot more simple and casual, like “the coffee bean,” and feel more like normal
-            conversations. So even though both shows are kind of chaotic and funny, the language in
-                <em>Adventure Time</em> is way more imaginative, while <em>Regular Show</em> feels
-            more grounded and realistic. </p>
-
-        <div style="display:flex; gap:30px; flex-wrap:wrap;">
-
+        <div class="essay-images">
             <figure>
-                <img src="images/AT-ant.png" alt="Adventure Time n-grams" width="400">
-                <figcaption>Top 3-grams from Adventure Time Season 1.</figcaption>
+                <img src="images/AT-ant.png" alt="Adventure Time n-grams" class="zoom-img ">
+                <figcaption> Top 3-grams from Adventure Time Season 1. </figcaption>
             </figure>
 
             <figure>
-                <img src="images/RS-ant.png" alt="Regular Show n-grams" width="400">
-                <figcaption>Top 3-grams from Regular Show Season 1.</figcaption>
+                <img src="images/RS-ant.png" alt="Regular Show n-grams" class="zoom-img ">
+                <figcaption> Top 3-grams from Regular Show Season 1. </figcaption>
             </figure>
-
         </div>
+
+        <p> When I looked at the n-gram results in AntConc, I noticed that both shows repeat
+            character names a lot, like “Finn and Jake” and “Mordecai and Rigby.” But the way those
+            phrases are used is actually different. In <em>Adventure Time</em>, repeated phrases are
+            often tied to its fantasy world, like “Lumpy Space Princess” or “the candy people,”
+            which makes the language feel really specific and imaginative. I experimented with
+            different n-gram sizes in AntConc, starting with smaller clusters before increasing the
+            size to identify more meaningful repeated phrases. Even though three is still relativly
+            small, I felt like it gave accurate insight into both shows. In <em>Regular Show</em>,
+            the phrases are more simple and casual, and feel more like normal conversations. So even
+            though both shows are chaotic and funny, <em>Adventure Time</em> uses more creative
+            language, while <em>Regular Show</em> feels more grounded and realistic. </p>
+
 
     </body>
 </html>
