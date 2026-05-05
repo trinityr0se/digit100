@@ -132,106 +132,88 @@ hr {
 }
 
 /* homepage*/
+=/* homepage */
 
 body.home-page {
     margin: 0;
-    background: #c9abd3;
+    background: linear-gradient(to bottom, #d5b1d5, #f6e7ef);
+    color: #5f4a57;
+    overflow-x: hidden;
 }
 
 .home-page .hero {
-    position: relative;
-    width: 100%;
-    max-width: 1920px;
-    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 100px 20px 60px;
+    text-align: center;
 }
 
-.home-page .hero-img {
-    display: block;
-    width: 100%;
-    height: auto;
+.home-page h1 {
+    font-size: clamp(3rem, 7vw, 5.5rem);
+    color: #8b5d7a;
+    margin-bottom: 10px;
+    font-family: "Snell Roundhand", "Brush Script MT", cursive;
+    letter-spacing: 1px;
+}
+
+.home-page .subtitle {
+    font-size: 1.2rem;
+    color: #7d5f6f;
+    margin-bottom: 50px;
+    font-style: italic;
 }
 
 .home-page .hero-nav {
-    position: absolute;
-    inset: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 22px;
+    margin-bottom: 55px;
 }
 
 .home-page .btn {
-    position: absolute;
-    width: 20%;
-    height: 9%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
     text-decoration: none;
-    font-family: "Snell Roundhand", "Brush Script MT", cursive;
-    font-size: clamp(1.4rem, 2.6vw, 2.7rem);
+    padding: 16px 30px;
+    background: rgba(245, 231, 238, 0.92);
+    border: 3px solid #ead8b2;
+    border-radius: 40px;
     color: #8a7348;
-    line-height: 1;
-    background: rgba(255, 0, 0, 0.18);
+    font-family: "Snell Roundhand", "Brush Script MT", cursive;
+    font-size: 1.8rem;
+    transition: all 0.3s ease;
+    box-shadow: 0px 5px 14px rgba(0, 0, 0, 0.12);
 }
 
-.home-page .about {
-    top: 28.7%;
-    left: 77.1%;
-}
-
-.home-page .projects {
-    top: 43.1%;
-    left: 77.3%;
-}
-
-.home-page .gallery {
-    position: absolute;
-    top: 47%;
-    left: 77.4%;
-    width: 20%;
-    height: 9%;
-    margin: 0;
-    padding: 0;
-    display: flex;
-    grid-template-columns: none;
-    gap: 0;
-    max-width: none;
-    background: none;
-    border: none;
-    outline: none;
-}
-
-.home-page .essays {
-    top: 75.7%;
-    left: 77%;
+.home-page .btn:hover {
+    transform: translateY(-4px) scale(1.05);
+    background: #ead8b2;
+    color: #7d5f3b;
 }
 
 .home-page .about-blurb {
-    position: absolute;
-    top: 70.2%;
-    left: 5.2%;
-    width: 21%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-family: "Times New Roman", serif;
-    font-size: 18pt;
-    line-height: 1.35;
-    background: rgba(255, 0, 0, 0.18);
-    text-align: center;
-    color: #8a7348;
-    text-shadow: 0.5px 0.5px 2px rgba(0, 0, 0, 0.12);
+    max-width: 760px;
+    background: rgba(245, 231, 238, 0.7);
+    border: 4px solid #ead8b2;
+    outline: 2px solid #c49c6b;
+    border-radius: 24px;
+    padding: 30px;
+    font-size: 1.15rem;
+    line-height: 1.9;
+    color: #7d5f6f;
+    box-shadow: 0px 6px 18px rgba(0, 0, 0, 0.08);
 }
 
-/* override interior styles on homepage */
-.home-page .nav,
-.home-page p,
-.home-page h1,
-.home-page h2,
-.home-page hr {
-    max-width: none;
-    margin-left: 0;
-    margin-right: 0;
-    background: none;
-    border: none;
-    padding: 0;
+.home-page footer {
+    text-align: center;
+    padding: 50px 20px 30px;
+    color: #7d5f6f;
+    font-size: 0.9rem;
+}
+
+.home-page footer a {
+    color: #8b5d7a;
 }
 
 /* essay images */
@@ -306,3 +288,20 @@ body.home-page {
     z-index: 2;
 }
 
+.cc-license {
+    margin-top: 60px;
+    text-align: center;
+    padding-bottom: 40px;
+    color: #7d5f6f;
+    font-size: 0.9rem;
+}
+
+.cc-license img {
+    margin-bottom: 10px;
+    border-radius: 6px;
+}
+
+.cc-license a {
+    color: #8b5d7a;
+    text-decoration: none;
+}
