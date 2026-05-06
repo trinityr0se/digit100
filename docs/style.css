@@ -320,3 +320,27 @@ body.home-page {
     padding: 0;
     margin: 0;
 }
+
+.analysis-figure {
+    max-width: 650px;
+    margin: 35px auto;
+    text-align: center;
+}
+
+.analysis-figure img {
+    width: 100%;
+    max-width: 650px;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    border: 3px solid #E5A9A9;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.12);
+}
+
+.analysis-figure figcaption {
+    margin-top: 12px;
+    font-size: 0.95rem;
+    color: #6BB1AD;
+    font-style: italic;
+}
