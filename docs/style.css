@@ -344,3 +344,19 @@ body.home-page {
     color: #6BB1AD;
     font-style: italic;
 }
+
+.thinglink-embed {
+    width: 90%;
+    max-width: 1000px;
+    margin: 40px auto;
+    text-align: center;
+}
+
+.thinglink-embed h2 {
+    margin-bottom: 20px;
+}
+
+.thinglink-embed iframe {
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.2);
+}
